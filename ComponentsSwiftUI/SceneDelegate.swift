@@ -22,9 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the SwiftUI view that provides the window contents.
         let contentView = DraggableView() {
             Text("Esto es un texto draggable")
-                .font(.system(size:20, weight: .bold, design: .rounded))
+                .font(.system(size: 20, weight: .bold, design: .rounded))
                 .foregroundColor(.pink)
                 .background(Color.black)
+                .frame(height: 80)
         }
 
         // Use a UIHostingController as window root view controller.

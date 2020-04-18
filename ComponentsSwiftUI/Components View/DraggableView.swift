@@ -29,7 +29,7 @@ struct DraggableView<T>: View where T: View {
                         .modifier(GeometryGetterMod(rect: self.$childSize))
                 )
                 .gesture(
-                    LongPressGesture(minimumDuration: 1.0)
+                    LongPressGesture()
                         .sequenced(before: DragGesture())
                         .updating(self.$dragState){ (value, state, transaction) in
                             switch value {
