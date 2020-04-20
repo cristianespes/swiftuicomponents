@@ -63,6 +63,7 @@ struct GridView<Content, T>: View where Content: View  {
     }
 }
 
+#if DEBUG
 struct GridView_Previews: PreviewProvider {
     static var previews: some View {
         GridView(columns: 3,
@@ -75,3 +76,4 @@ struct GridView_Previews: PreviewProvider {
         //.padding(.horizontal, 10)
     }
 }
+#endif

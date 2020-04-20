@@ -135,6 +135,7 @@ struct GeometryGetterMod: ViewModifier {
     }
 }
 
+#if DEBUG
 struct DraggableView_Previews: PreviewProvider {
     static var previews: some View {
         DraggableView() {
@@ -145,6 +146,4 @@ struct DraggableView_Previews: PreviewProvider {
         }
     }
 }
-
-
-
+#endif
